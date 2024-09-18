@@ -1,12 +1,11 @@
 import { useState } from 'react'
+import SearchBox from './component/search'
 
 
 function App() {
   return (
     <>
-      <div className='App'>
-        <div className='flex justify-center min-h-screen items-center'>Hello world</div>
-      </div>
+      <SearchBox />
     </>
   )
 }
