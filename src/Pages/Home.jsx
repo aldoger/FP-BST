@@ -23,7 +23,7 @@ const Home = () => {
   return (
     <>
       <Navbar />
-      <div className="bg-gradient-to-br from-yellow-300 via-orange-500 to-red-600 py-10">
+      <div className="bg-gradient-to-br from-yellow-300 via-orange-500 to-red-600 py-10 min-h-screen">
         <div className="container mx-auto px-6">
           <h1 className="text-center text-4xl font-bold text-white mb-10">
             Delicious Meals for You
