@@ -17,6 +17,7 @@ const Search = () => {
         });
     };
 
+
     return (
         <>
             <Navbar />
@@ -32,15 +33,34 @@ const Search = () => {
                                         alt={foodDetails.strMeal}
                                         className="w-32 h-32 object-cover rounded-full mr-6"
                                     />
-                                    <div>
+                                    <div className="mr-6">
                                         <h2 className="text-3xl font-bold text-gray-800">{foodDetails.strMeal}</h2>
                                         <p className="text-sm text-gray-600">Area: {foodDetails.strArea}</p>
+                                    </div>
+                                    <div className="grid grid-cols-3 gap-4 p-4  bg-gray-50 rounded-lg shadow-md">
+                                        {[...Array(20)].map((_, i) => {
+                                          const ingredient = foodDetails[`strIngredient${i + 1}`];
+                                        
+                                          return ingredient ? (
+                                            <p
+                                              key={i}
+                                              className="p-2 text-gray-800 bg-white rounded-lg shadow-sm border border-gray-200 hover:bg-blue-50 transition-colors"
+                                            >
+                                              <span className="font-semibold text-blue-600">{i + 1}.</span> {ingredient}
+                                            </p>
+                                          ) : null;
+                                        })}
                                     </div>
                                 </div>
                             </div>
                         ) : (
                             <p className="text-center text-white">No food details available. Please search for a food item.</p>
                         )}
+                    </div>
+                    <div className="mx-auto max-w-4xl p-6 bg-white rounded-lg shadow-lg">
+                        <p className="text-lg leading-relaxed text-gray-800 text-justify">
+                          {foodDetails?.strInstructions ? foodDetails.strInstructions : "No Instruction"}
+                        </p>
                     </div>
                 </div>
             </div>
