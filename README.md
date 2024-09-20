@@ -1,8 +1,11 @@
-# React + Vite
+# YokMasak!!
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![alt text](image.png)
 
-Currently, two official plugins are available:
+YokMasak!! adalah web yang menyediakan berbagai macam makanan yang ada di dunia.
+Website ini berisi informasi mengenai makanan-makanan seperti bahan yang diperlukan untuk membuat makanan
+dan langkah-langkah yang harus dilakukan untuk membuat makanan tersebut.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![alt text](image-1.png)
+
+data-data yang disediakan didapat melalui API yang disediakan web diatas.

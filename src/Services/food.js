@@ -1,5 +1,5 @@
 import axios from 'axios';
-
+// ini untuk memanggil makanan dengan huruf depan a
 export const getFoodsA = (callback) => {
     axios.get('https://www.themealdb.com/api/json/v1/1/search.php?f=a').then((res) => {
         const meals = res.data.meals; 
@@ -9,7 +9,7 @@ export const getFoodsA = (callback) => {
         callback([]); 
     });
 };
-
+// ini untuk memanggil makanan dengan huruf depan b
 export const getFoodsB = (callback) => {
     axios.get('https://www.themealdb.com/api/json/v1/1/search.php?f=b').then((res) => {
         const meals = res.data.meals; 
@@ -19,7 +19,7 @@ export const getFoodsB = (callback) => {
         callback([]); 
     });
 };
-
+// ini untuk memamnggil makanan sesuai dengan foodname dari search.jsx
 export const searchFood = (foodname, callback) => {
     axios.get(`https://www.themealdb.com/api/json/v1/1/search.php?s=${foodname}`)
         .then((res) => {
