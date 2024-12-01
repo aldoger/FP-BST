@@ -1,8 +1,8 @@
 import  { useState, useEffect } from "react";
-import Navbar from "../component/navbar";
-import { getFoodsA, getFoodsB } from "../Services/food";
-import CardFood from "../component/CardFood";
-import Footer from "../component/Footer";
+import Navbar from "../component/navbar.jsx";
+import { getFoodsA, getFoodsB } from "../Services/food.js";
+import CardFood from "../component/CardFood.jsx";
+import Footer from "../component/Footer.jsx";
 
 const Home = () => {
   const [foodsA, setFoodsA] = useState([]);

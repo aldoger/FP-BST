@@ -1,8 +1,8 @@
 import { useState } from "react";
-import Footer from "../component/Footer";
-import Navbar from "../component/navbar";
-import SearchBox from "../component/searchBar";
-import { searchFood } from "../Services/food";
+import Footer from "../component/Footer.jsx";
+import Navbar from "../component/navbar.jsx";
+import SearchBox from "../component/searchBar.jsx";
+import { searchFood } from "../Services/food.js";
 
 const Search = () => {
     const [foodDetails, setFoodDetails] = useState(null); 
