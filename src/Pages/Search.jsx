@@ -4,7 +4,7 @@ import Navbar from "../component/navbar.jsx";
 import SearchBox from "../component/searchBar.jsx";
 import { searchFood } from "../Services/food.js";
 
-const Search = () => {
+const SearchPage = () => {
     const [foodDetails, setFoodDetails] = useState(null); 
     
     const handleSearch = (foodname) => {
@@ -70,4 +70,4 @@ const Search = () => {
 };
 
 
-export default Search;
+export default SearchPage;

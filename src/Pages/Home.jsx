@@ -4,7 +4,7 @@ import { getFoodsA, getFoodsB } from "../Services/food.js";
 import CardFood from "../component/CardFood.jsx";
 import Footer from "../component/Footer.jsx";
 
-const Home = () => {
+const HomePage = () => {
   const [foodsA, setFoodsA] = useState([]);
   const [foodsB, setFoodsB] = useState([]);
 
@@ -43,4 +43,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomePage;
